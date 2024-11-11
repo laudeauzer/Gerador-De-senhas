@@ -4,7 +4,8 @@ namespace GeradorDeSenhas {
     {
         static void Main(string[] args)
         {
-            int qtd = int.Parse(args[0]);
+            Console.WriteLine("Digite a quantidade de caracteres que você quer para a sua senha");
+            int qtd = int.Parse(Console.ReadLine());
             string caracteresPossiveis = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%0123456789";
 
 
@@ -19,11 +20,10 @@ namespace GeradorDeSenhas {
             }
 
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.Write(password);
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("\n \n");           
+            Console.Write(password);           
+            Console.WriteLine("\n \n" );
+            
         }
     }
 }
